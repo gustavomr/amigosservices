@@ -1,0 +1,2 @@
+curl -d '{"firstName": "aaa","lastName": "bbb","email": "ssss@gmail.com"}' -H "Content-Type: application/json" -X POST localhost:8080/api/v1/customers
+
