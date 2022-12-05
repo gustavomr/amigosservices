@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 public class FraudCheckService {
 
     private final FraudCheckHistoryRepository fraudCheckHistoryRepository;
+
     public boolean isFraudulentCustomer(Integer customerId) {
         fraudCheckHistoryRepository.save(
                 FraudCheckHistory.builder()
@@ -20,4 +21,5 @@ public class FraudCheckService {
         );
         return false;
     }
+
 }
